@@ -5,12 +5,12 @@ let amigos=[];
 function adicionarAmigo() {
     //Adiciona um amigo à lista de amigos
 
-    nome=document.querySelector('input').value;
+    nome=document.querySelector('input');
 
-    if (nome=='') {
+    if (nome.value=='') {
         alert('Por favor, ensira um nome');
     } else {
-        amigos.push(nome);
+        amigos.push(nome.value);
         nome.value='';
         listaAmigos();
     }
